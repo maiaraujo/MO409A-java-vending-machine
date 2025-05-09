@@ -5,6 +5,7 @@
 	<artifactId>m1-java-capstone-vending-machine</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -29,6 +30,21 @@
 			<artifactId>graphwalker-core</artifactId>
 			<version>4.3.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.graphwalker</groupId>
+			<artifactId>graphwalker-maven-plugin</artifactId>
+			<version>4.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graphwalker</groupId>
+			<artifactId>graphwalker-io</artifactId>
+			<version>4.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.graphwalker</groupId>
+			<artifactId>graphwalker-java</artifactId>
+			<version>4.3.3</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -50,11 +66,15 @@
 				</goals>
 				</execution>
 			</executions>
-			<configuration>
+			<!--configuration>
+				<sources>
+					<source>target/generated-sources/graphwalker</source>
+				</sources>
 				<model>src/main/resources/Vending-Machine_HFSM_semFim.json</model>
 				<pathGenerator>random(vertex_coverage(100))</pathGenerator>
 				<verbose>true</verbose>
-			</configuration>
+				<packageName>org.graphwalker.java.report</packageName>
+			</configuration-->
 			</plugin>
 		</plugins>
 	</build>
