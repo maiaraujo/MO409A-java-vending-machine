@@ -1,4 +1,9 @@
 
+package com.techelevator;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
 public class TesteMaquinaVendas{
   @Test
   public void Teste1() {
