@@ -34,6 +34,23 @@
 					<target>11</target>
 				</configuration>
 			</plugin>
+			<plugin>
+			<groupId>org.graphwalker</groupId>
+			<artifactId>graphwalker-maven-plugin</artifactId>
+			<version>4.3.3</version>
+			<executions>
+				<execution>
+				<goals>
+					<goal>generate-sources</goal>
+				</goals>
+				</execution>
+			</executions>
+			<configuration>
+				<model>src/main/resources/Vending-Machine_HFSM_semFim.json</model>
+				<pathGenerator>random(vertex_coverage(100))</pathGenerator>
+				<verbose>true</verbose>
+			</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
