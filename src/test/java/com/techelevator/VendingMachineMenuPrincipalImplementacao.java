@@ -12,6 +12,11 @@ import org.junit.Test;
 public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext implements vending_machine{
     
     @Override
+    public void menu_compra(){
+        System.out.println("Acessou menu compra");
+    }
+    
+    @Override
     public void e_finalizar_programa(){
         System.out.println("Finalizou o programa");
     }
