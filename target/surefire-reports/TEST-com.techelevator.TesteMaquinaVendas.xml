@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.techelevator.TesteMaquinaVendas" time="0.021" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.techelevator.TesteMaquinaVendas" time="0.29" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,10 +59,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-21.0.6+7"/>
   </properties>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste1" time="0.006"/>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste2" time="0.001"/>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste3" time="0.009"/>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste4" time="0.002"/>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste5" time="0.001"/>
-  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste6" time="0.002"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste1" time="0.076"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste2" time="0.103"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste3" time="0.074"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste4" time="0.009"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste5" time="0.01"/>
+  <testcase classname="com.techelevator.TesteMaquinaVendas" name="Teste6" time="0.018"/>
 </testsuite>

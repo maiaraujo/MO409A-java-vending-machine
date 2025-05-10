@@ -8,19 +8,13 @@ import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 import org.junit.Before;
 
+import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @GraphWalker(value = "random(vertex_coverage(100))", start = "menu_compra")
 public class VendingMachineCompraImplementacao extends ExecutionContext implements menu_compra {
     public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_semFim.json");
-
-   /*private VendingMachine testVM;*/
-
-    @Before
-    public void setUp() {
-        /*testVM = new TesteMaquinaVendas();*/
-    }
 
     @Override
     public void menu_principal() {
