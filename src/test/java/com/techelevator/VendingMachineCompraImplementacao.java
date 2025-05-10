@@ -77,10 +77,9 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_devolve_troco() {
-        /*System.out.println("e_devolve_troco: Devolvendo troco");
-        int[] troco = vendingMachine.getChange();
-        System.out.printf("Troco: %d quarters, %d dimes, %d nickels%n", troco[0], troco[1], troco[2]);*/
         System.out.println("e_devolve_troco: Devolvendo troco");
+        int[] troco = vendingMachine.getChange();
+        System.out.printf("e_devolve_troco: Devolvendo troco: %d quarters, %d dimes, %d nickels%n", troco[0], troco[1], troco[2]);
     }
 
     @Override
@@ -90,7 +89,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_insere_quantia() {
-        quantia = 1.0;
+        quantia = 10.0;
         System.out.println("e_insere_quantia: Inserindo quantia valida de "+vendingMachine.displayAsCurrency(quantia));
             
         double saldoAntes = vendingMachine.getMachineBalance();
@@ -127,24 +126,32 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
     }
 
     @Override
-    public void e_produto_disponivel() {
-        System.out.println("e_produto_disponivel: Verificando se Produto disponível");
-
-        Assert.assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() > 0);
-        illegalStateException = false;
+    public void verifica_saldo() {
+        System.out.println("verifica_saldo: Verifica se saldo e suficiente");
     }
 
     @Override
-    public void verifica_saldo() {
-        System.out.println("verifica_saldo: Verificae se saldo é suficiente");
+    public void libera_produto() {
+        if(!illegalStateException){
+            assertTrue(!illegalStateException);
+        }
+        System.out.println("libera_produto: Produto liberado");
+    }
+
+    @Override
+    public void espera_produto() {
+        if(!illegalStateException){
+            assertTrue(!illegalStateException);
+        }
+        System.out.println("espera_produto: Esperando produto");
     }
 
     @Override
     public void e_verifica_saldo() {
-        assertTrue(vendingMachine.getMachineBalance() >= 0.0 && preco_produto <= vendingMachine.getMachineBalance());
+        assertTrue(preco_produto <= vendingMachine.getMachineBalance());
         illegalStateException = false;
         
-        System.out.println("e_verifica_saldo: Verificando que saldo suficiente");
+        System.out.println("e_verifica_saldo: Verificando que saldo suficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preço de produto "+vendingMachine.displayAsCurrency(preco_produto));
     }
     
     @Override
@@ -152,25 +159,18 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         assertTrue(preco_produto > vendingMachine.getMachineBalance());
         illegalStateException = true;
         
-        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente");
-    }
-
-    @Override
-    public void libera_produto() {
-        System.out.println("libera_produto: Produto liberado");
-    }
-
-    @Override
-    public void espera_produto() {
-        System.out.println("espera_produto: Esperando produto");
+        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preço de produto "+vendingMachine.displayAsCurrency(preco_produto));
     }
 
     @Override
     public void e_insere_codigo() {
         produto_escolhido = "A3";
-        System.out.println("e_insere_codigo: Inserindo codigo correto: " + produto_escolhido);
 
         assertTrue(vendingMachine.getInventory().containsKey(produto_escolhido));
+        preco_produto = vendingMachine.getInventory().get(produto_escolhido).getPrice();
+
+        System.out.println("e_insere_codigo: Inserindo codigo correto: " + produto_escolhido+" e o preço do produto é "+vendingMachine.displayAsCurrency(preco_produto));
+
         illegalStateException = false;
     }
     @Override
@@ -184,11 +184,31 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_produto_indisponivel() {
-        System.out.println("e_produto_indisponivel: Produto indisponível");
+        System.out.println("e_produto_indisponivel: Verificando se Produto indisponivel: "+vendingMachine.getInventory().get(produto_escolhido).getQuantity());
+
+        assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() == 0);
+        illegalStateException = true;
+    }
+
+    @Override
+    public void e_produto_disponivel() {
+        System.out.println("e_produto_disponivel: Verificando se Produto disponivel: "+vendingMachine.getInventory().get(produto_escolhido).getQuantity());
+
+        Assert.assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() > 0);
+        illegalStateException = false;
     }
 
     @Override
     public void e_produtto_liberado() {
         System.out.println("e_produtto_liberado: Liberando produto");
+        
+        Item item = vendingMachine.getInventory().get(produto_escolhido);
+        int quantidadeAntes = item.getQuantity();
+        vendingMachine.transaction(produto_escolhido);  // efetua a compra
+        int quantidadeDepois = item.getQuantity();
+
+        assertEquals(quantidadeAntes - 1, quantidadeDepois);
+
+        illegalStateException = false;
     }
 }
