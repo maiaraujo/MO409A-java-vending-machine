@@ -10,8 +10,8 @@ import org.junit.Test;
 
 public class TesteMaquinaVendas{
   
-  VendingMachineMenuPrincipalImpementacao menu_principal = new VendingMachineMenuPrincipalImpementacao();
-  VendingMachineCompraImpementacao menu_compra = new VendingMachineCompraImpementacao();
+  VendingMachineMenuPrincipalImplementacao menu_principal = new VendingMachineMenuPrincipalImplementacao();
+  VendingMachineCompraImplementacao menu_compra = new VendingMachineCompraImplementacao();
 
   @Test
   public void Teste1() {

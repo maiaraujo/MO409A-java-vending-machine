@@ -15,9 +15,6 @@ public interface vending_machine {
     @Edge()
     void e_escolhe_opcao2();
 
-    /*@Vertex()
-    void menu_compra();*/
-
     @Edge()
     void e_escolhe_opcao3();
 

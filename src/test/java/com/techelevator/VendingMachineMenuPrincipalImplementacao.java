@@ -3,11 +3,10 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 import org.junit.Before;
 
-import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 
 @GraphWalker(value = "random(vertex_coverage(100))", start = "menu_principal")
-public class VendingMachineMenuPrincipalImpementacao extends ExecutionContext implements vending_machine{
+public class VendingMachineMenuPrincipalImplementacao implements vending_machine{
     
     @Override
     public void e_finalizar_programa(){
