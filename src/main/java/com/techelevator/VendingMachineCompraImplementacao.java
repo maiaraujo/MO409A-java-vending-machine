@@ -19,7 +19,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
     }
 
     @Override
-    public void menu_compra_inicio() {
+    public void menu_compra() {
         System.out.println("Entrou no menu de compra");
     }
 

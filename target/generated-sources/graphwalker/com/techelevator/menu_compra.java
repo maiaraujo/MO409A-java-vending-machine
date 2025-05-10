@@ -9,7 +9,7 @@ import org.graphwalker.java.annotation.Edge;
 public interface menu_compra {
 
     @Vertex()
-    void menu_compra_inicio();
+    void menu_compra();
     
     @Edge()
     void e_insere_quantia_invalida();
