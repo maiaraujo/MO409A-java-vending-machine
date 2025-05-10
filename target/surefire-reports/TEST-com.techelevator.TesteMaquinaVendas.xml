@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techelevator.TesteMaquinaVendas" time="1.204" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techelevator.TesteMaquinaVendas" time="1.128" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\maiar\AppData\Local\Temp\surefire12361802621378662839\surefirebooter-20250510001423832_3.jar C:\Users\maiar\AppData\Local\Temp\surefire12361802621378662839 2025-05-10T00-14-23_628-jvmRun1 surefire-20250510001423832_1tmp surefire_0-20250510001423832_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\maiar\AppData\Local\Temp\surefire4878026792247483404\surefirebooter-20250510112924676_3.jar C:\Users\maiar\AppData\Local\Temp\surefire4878026792247483404 2025-05-10T11-29-24_487-jvmRun1 surefire-20250510112924676_1tmp surefire_0-20250510112924676_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\maiar\Desktop\Aulas\UNICAMP\UNICAMP - IC\AULAS - 2025-02 - ELIANE - VeV\Exercicio 6\MO409A-java-vending-machine\target\test-classes;C:\Users\maiar\Desktop\Aulas\UNICAMP\UNICAMP - IC\AULAS - 2025-02 - ELIANE - VeV\Exercicio 6\MO409A-java-vending-machine\target\classes;C:\Users\maiar\.m2\repository\org\graphwalker\graphwalker-java\4.3.3\graphwalker-java-4.3.3.jar;C:\Users\maiar\.m2\repository\org\graphwalker\graphwalker-dsl\4.3.3\graphwalker-dsl-4.3.3.jar;C:\Users\maiar\.m2\repository\org\graphwalker\graphwalker-core\4.3.3\graphwalker-core-4.3.3.jar;C:\Users\maiar\.m2\repository\org\graalvm\sdk\graal-sdk\22.3.5\graal-sdk-22.3.5.jar;C:\Users\maiar\.m2\repository\org\graalvm\js\js\22.3.5\js-22.3.5.jar;C:\Users\maiar\.m2\repository\org\graalvm\regex\regex\22.3.5\regex-22.3.5.jar;C:\Users\maiar\.m2\repository\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\maiar\.m2\repository\org\graalvm\js\js-scriptengine\22.3.5\js-scriptengine-22.3.5.jar;C:\Users\maiar\.m2\repository\org\graalvm\truffle\truffle-api\22.3.5\truffle-api-22.3.5.jar;C:\Users\maiar\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\maiar\.m2\repository\org\graphwalker\graphwalker-io\4.3.3\graphwalker-io-4.3.3.jar;C:\Users\maiar\.m2\repository\org\apache\xmlbeans\xmlbeans\3.1.0\xmlbeans-3.1.0.jar;C:\Users\maiar\.m2\repository\org\json\json\20240303\json-20240303.jar;C:\Users\maiar\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\maiar\.m2\repository\io\github\classgraph\classgraph\4.8.174\classgraph-4.8.174.jar;C:\Users\maiar\.m2\repository\com\google\code\javaparser\javaparser\1.0.11\javaparser-1.0.11.jar;C:\Users\maiar\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\maiar\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\maiar\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\maiar\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\maiar\.m2\repository\javax\xml\bind\jaxb-api\2.4.0-b180830.0359\jaxb-api-2.4.0-b180830.0359.jar;C:\Users\maiar\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\maiar\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.1\jaxb-impl-2.3.1.jar;C:\Users\maiar\.m2\repository\org\javassist\javassist\3.30.2-GA\javassist-3.30.2-GA.jar;C:\Users\maiar\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\maiar\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\maiar\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\maiar\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\maiar\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\maiar\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\maiar\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\maiar\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\maiar\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\maiar\.m2\repository\org\mockito\mockito-all\1.10.19\mockito-all-1.10.19.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\maiar\AppData\Local\Temp\surefire12361802621378662839\surefirebooter-20250510001423832_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\maiar\AppData\Local\Temp\surefire4878026792247483404\surefirebooter-20250510112924676_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+6"/>
@@ -55,7 +55,7 @@
     <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="user.language.format" value="pt"/>
     <property name="sun.os.patch.level" value=""/>
-    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\maiar\AppData\Local\Programs\Python\Python312\;C:\Users\maiar\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.1.0\;C:\Program Files\Apache\Maven\apache-maven-3.9.9\bin;C:\Users\maiar\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\maiar\AppData\Local\Programs\Python\Python312\;C:\Users\maiar\AppData\Local\Microsoft\WindowsApps;C:\Users\maiar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\maiar\AppData\Roaming\npm;C:\Users\maiar\AppData\Local\GitHubDesktop\bin;c:\Users\maiar\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\scripts\noConfigScripts;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-11.0.27.6-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\maiar\AppData\Local\Programs\Python\Python312\;C:\Users\maiar\AppData\Local\Programs\Python\Python312\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2024.1.0\;C:\Program Files\Apache\Maven\apache-maven-3.9.9\bin;C:\Users\maiar\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\maiar\AppData\Local\Microsoft\WindowsApps;C:\Users\maiar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\maiar\AppData\Roaming\npm;C:\Users\maiar\AppData\Local\GitHubDesktop\bin;c:\Users\maiar\.vscode\extensions\ms-python.debugpy-2025.8.0-win32-x64\bundled\scripts\noConfigScripts;."/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
     <property name="java.vm.version" value="11.0.27+6"/>
@@ -63,328 +63,328 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Teste1" classname="com.techelevator.TesteMaquinaVendas" time="0.015">
-    <system-out><![CDATA[Entrou no menu principal
-Escolheu a opção 2
+  <testcase name="Teste1" classname="com.techelevator.TesteMaquinaVendas" time="0.013">
+    <system-out><![CDATA[Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 3
-Entrou em encerrar
+Menu principal exibido
+Escolheu a opcao 3
+Encerra
 Salvou o Sales Report
-Entrou no Sales Report
+Salva Sales Report
 Finalizou o programa
-Fecho o programa
+Encerra o programa
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="Teste2" classname="com.techelevator.TesteMaquinaVendas" time="0.004">
+  <testcase name="Teste2" classname="com.techelevator.TesteMaquinaVendas" time="0.04">
     <system-out><![CDATA[Abriu novamente o programa
-Entrou no menu principal
-Entrou no menu principal
-Entrou no menu principal
-Fecho o programa
-Entrou no Exibir itens
+Menu principal exibido
+Menu principal exibido
+Menu principal exibido
+Fechou o programa
+Exibe itens
 Voltou no menu
-Entrou no menu principal
-Fecho o programa
-Entrou no Exibir itens
+Menu principal exibido
+Fechou o programa
+Exibe itens
 Voltou no menu
-Entrou no menu principal
-Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 3
-Entrou em encerrar
+Menu principal exibido
+Menu principal exibido
+Menu principal exibido
+Escolheu a opcao 3
+Encerra
 Salvou o Sales Report
-Entrou no Sales Report
+Salva Sales Report
 Finalizou o programa
-Fecho o programa
+Encerra o programa
 ]]></system-out>
   </testcase>
-  <testcase name="Teste3" classname="com.techelevator.TesteMaquinaVendas" time="0.013">
+  <testcase name="Teste3" classname="com.techelevator.TesteMaquinaVendas" time="0.036">
     <system-out><![CDATA[Abriu novamente o programa
-Entrou no menu principal
-Entrou no menu principal
-Entrou no menu principal
-Fecho o programa
-Entrou no Exibir itens
+Menu principal exibido
+Menu principal exibido
+Menu principal exibido
+Fechou o programa
+Exibe itens
 Voltou no menu
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Quantia inválida
+Insere quantia invÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Fecho o programa
-Entrou no Exibir itens
+Menu principal exibido
+Fechou o programa
+Exibe itens
 Voltou no menu
-Entrou no menu principal
-Escolheu a opção 3
-Entrou em encerrar
+Menu principal exibido
+Escolheu a opcao 3
+Encerra
 Salvou o Sales Report
-Entrou no Sales Report
+Salva Sales Report
 Finalizou o programa
-Fecho o programa
+Encerra o programa
 ]]></system-out>
   </testcase>
-  <testcase name="Teste4" classname="com.techelevator.TesteMaquinaVendas" time="0.006">
+  <testcase name="Teste4" classname="com.techelevator.TesteMaquinaVendas" time="0.027">
     <system-out><![CDATA[Abriu novamente o programa
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 3
-Entrou em encerrar
+Menu principal exibido
+Escolheu a opcao 3
+Encerra
 Salvou o Sales Report
-Entrou no Sales Report
+Salva Sales Report
 Finalizou o programa
-Fecho o programa
+Encerra o programa
 ]]></system-out>
   </testcase>
-  <testcase name="Teste5" classname="com.techelevator.TesteMaquinaVendas" time="0.003">
+  <testcase name="Teste5" classname="com.techelevator.TesteMaquinaVendas" time="0.02">
     <system-out><![CDATA[Abriu novamente o programa
-Entrou no menu principal
-Escolheu a opção 3
-Entrou em encerrar
+Menu principal exibido
+Escolheu a opcao 3
+Encerra
 Salvou o Sales Report
-Entrou no Sales Report
+Salva Sales Report
 Finalizou o programa
-Fecho o programa
+Encerra o programa
 ]]></system-out>
   </testcase>
-  <testcase name="Teste6" classname="com.techelevator.TesteMaquinaVendas" time="0.016">
+  <testcase name="Teste6" classname="com.techelevator.TesteMaquinaVendas" time="0.037">
     <system-out><![CDATA[Abriu novamente o programa
-Entrou no menu principal
-Fecho o programa
-Entrou no Exibir itens
+Menu principal exibido
+Fechou o programa
+Exibe itens
 Voltou no menu
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
+Entra no menu de compra
 Entrou no menu de compra
-Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Quantia inválida
+Insere quantia invÃ¡lida
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido incorreto
+CÃ³digo inserido incorreto
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
 Entrou no menu de compra
-Escolheu a opção 3
-Finalizou ação
+Escolheu a opÃ§Ã£o 3
+Finalizou aÃ§Ã£o
 Devolvendo troco
 Entrou no menu principal
-Entrou no menu principal
-Escolheu a opção 2
+Menu principal exibido
+Escolheu a opcao 2
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Inseriu quantia
+Insere quantia vÃ¡lida
 Entrou no menu de compra
 Entrou no menu de compra
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Quantia inválida
+Insere quantia invÃ¡lida
 Entrou no menu de compra
-Escolheu a opção 1
+Escolheu a opÃ§Ã£o 1
 Esperando moeda
-Quantia inválida
+Insere quantia invÃ¡lida
 Entrou no menu de compra
-Escolheu a opção 2
+Escolheu a opÃ§Ã£o 2
 Esperando produto
-Código inserido
+CÃ³digo inserido
 Verificando disponibilidade
-Produto disponível
+Produto disponÃ­vel
 Verificando saldo
 Saldo verificado
 Produto liberado
