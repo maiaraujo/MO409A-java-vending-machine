@@ -1,12 +1,9 @@
 package com.techelevator;
 
-import static org.junit.Assert.*;
-
 import org.graphwalker.core.machine.ExecutionContext;
+import org.graphwalker.java.annotation.AfterExecution;
+import org.graphwalker.java.annotation.BeforeExecution;
 import org.graphwalker.java.annotation.GraphWalker;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 @GraphWalker(value = "random(vertex_coverage(100))", start = "menu_principal")
 public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext implements vending_machine{
@@ -24,6 +21,11 @@ public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext i
     @Override
     public void e_escolhe_opcao2(){
         System.out.println("Escolheu a opção 2");
+    }
+
+    @Override
+    public void menu_compra() {
+        System.out.println("Entrou no menu de compra");
     }
 
     @Override

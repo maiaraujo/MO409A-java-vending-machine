@@ -5,8 +5,13 @@
 	<artifactId>m1-java-capstone-vending-machine</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
-
 	<dependencies>
+		
+		<dependency>
+			<groupId>org.graphwalker</groupId>
+			<artifactId>graphwalker-java</artifactId>
+			<version>4.3.3</version>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -25,26 +30,6 @@
 			<version>1.10.19</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.graphwalker</groupId>
-			<artifactId>graphwalker-core</artifactId>
-			<version>4.3.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.graphwalker</groupId>
-			<artifactId>graphwalker-maven-plugin</artifactId>
-			<version>4.3.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.graphwalker</groupId>
-			<artifactId>graphwalker-io</artifactId>
-			<version>4.3.3</version>
-		</dependency>
-		<dependency>
-			<groupId>org.graphwalker</groupId>
-			<artifactId>graphwalker-java</artifactId>
-			<version>4.3.3</version>
-		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
@@ -56,25 +41,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-			<groupId>org.graphwalker</groupId>
-			<artifactId>graphwalker-maven-plugin</artifactId>
-			<version>4.3.3</version>
-			<executions>
-				<execution>
-				<goals>
-					<goal>generate-sources</goal>
-				</goals>
-				</execution>
-			</executions>
-			<!--configuration>
-				<sources>
-					<source>target/generated-sources/graphwalker</source>
-				</sources>
-				<model>src/main/resources/Vending-Machine_HFSM_semFim.json</model>
-				<pathGenerator>random(vertex_coverage(100))</pathGenerator>
-				<verbose>true</verbose>
-				<packageName>org.graphwalker.java.report</packageName>
-			</configuration-->
+				<groupId>org.graphwalker</groupId>
+				<artifactId>graphwalker-maven-plugin</artifactId>
+				<version>4.3.3</version>
 			</plugin>
 		</plugins>
 	</build>

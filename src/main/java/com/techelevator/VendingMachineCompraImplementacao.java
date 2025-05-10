@@ -1,12 +1,12 @@
 package com.techelevator;
-import static org.junit.Assert.*;
-import org.junit.Test;
-import org.junit.Before;
 
+import org.graphwalker.core.machine.ExecutionContext;
+import org.graphwalker.java.annotation.AfterExecution;
+import org.graphwalker.java.annotation.BeforeExecution;
 import org.graphwalker.java.annotation.GraphWalker;
 
-@GraphWalker(value = "random(vertex_coverage(100))", start = "menu_principal")
-public class VendingMachineCompraImplementacao implements menu_compra {
+@GraphWalker(value = "random(vertex_coverage(100))", start = "menu_compra")
+public class VendingMachineCompraImplementacao extends ExecutionContext implements menu_compra {
 
     @Override
     public void menu_principal() {
@@ -19,7 +19,7 @@ public class VendingMachineCompraImplementacao implements menu_compra {
     }
 
     @Override
-    public void menu_compra() {
+    public void menu_compra_inicio() {
         System.out.println("Entrou no menu de compra");
     }
 
