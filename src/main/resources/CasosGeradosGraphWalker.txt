@@ -116,7 +116,7 @@ e_insere_codigo
 verifica_disponibilidade
 e_produto_disponivel
 verifica_saldo
-e_verifica_saldo
+e_verifica_saldo_insuficiente
 menu_compra
 menu_compra
 menu_compra
@@ -126,7 +126,7 @@ e_insere_codigo
 verifica_disponibilidade
 e_produto_disponivel
 verifica_saldo
-e_verifica_saldo
+e_verifica_saldo_insuficiente
 menu_compra
 menu_compra
 menu_compra

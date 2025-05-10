@@ -1,20 +1,54 @@
 package com.techelevator;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
-import static org.junit.Assert.assertTrue;
-
 import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
+
+import static org.junit.Assert.*;
+import org.junit.Assert;
 import org.junit.Before;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @GraphWalker(value = "random(vertex_coverage(100))", start = "menu_compra")
 public class VendingMachineCompraImplementacao extends ExecutionContext implements menu_compra {
+    
     public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_semFim.json");
+
+    private VendingMachine vendingMachine;
+    private boolean illegalStateException;
+    
+    private double saldo;
+    private String codigo_produto;
+    private double quantia;
+
+    private String produto_escolhido;
+    private double preco_produto;
+
+    @Before
+    public void setUp() {
+        try {
+            vendingMachine = new VendingMachine();
+        } catch (IOException e) {
+            System.out.println("Erro ao iniciar a máquina de vendas: " + e.getMessage());
+        }
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.");
+        illegalStateException = false;
+        quantia = 0.0;
+    }
+
+    public VendingMachineCompraImplementacao() {
+        try {
+            vendingMachine = new VendingMachine(); // carrega inventário e log
+        } catch (IOException e) {
+            System.out.println("Erro ao iniciar a máquina de vendas: " + e.getMessage());
+        }
+        illegalStateException = false;
+        quantia = 0.0;
+    }
 
     @Override
     public void menu_principal() {
@@ -43,6 +77,9 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_devolve_troco() {
+        /*System.out.println("e_devolve_troco: Devolvendo troco");
+        int[] troco = vendingMachine.getChange();
+        System.out.printf("Troco: %d quarters, %d dimes, %d nickels%n", troco[0], troco[1], troco[2]);*/
         System.out.println("e_devolve_troco: Devolvendo troco");
     }
 
@@ -53,17 +90,35 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_insere_quantia() {
-        System.out.println("e_insere_quantia: Inserindo quantia valida");
+        quantia = 1.0;
+        System.out.println("e_insere_quantia: Inserindo quantia valida de "+vendingMachine.displayAsCurrency(quantia));
+            
+        double saldoAntes = vendingMachine.getMachineBalance();
+        vendingMachine.addMoney(quantia);
+
+        double saldoDepois = vendingMachine.getMachineBalance();
+        assertEquals(saldoAntes + quantia, saldoDepois, 0.001);  // O saldo após a inserção
+
+        illegalStateException = false;
     }
     @Override
     public void e_insere_quantia_invalida() {
+        quantia = 50.0;
+        System.out.println("e_insere_quantia_invalida: Inserindo quantia invalida de " + vendingMachine.displayAsCurrency(quantia));
         
-        System.out.println("e_insere_quantia_invalida: Inserindo quantia invalida");
+        /*try {
+            // Tentando inserir uma quantia inválida
+            vendingMachine.addMoney(quantia);
+            fail("Esperando captura da quantida invalida, mas passou.");
+        } catch (IllegalArgumentException e) {
+            System.out.println("Capturado esperada válida.");
+        }*/
+        illegalStateException = true;
     }
 
     @Override
     public void e_escolhe_opcao1() {
-        System.out.println("e_escolhe_opcao1: Escolhendo a opção 1");
+        System.out.println("e_escolhe_opcao1: Escolhendo a opcao 1");
     }
 
     @Override
@@ -73,22 +128,35 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_produto_disponivel() {
-        System.out.println("e_produto_disponivel: Produto disponível");
+        System.out.println("e_produto_disponivel: Verificando se Produto disponível");
+
+        Assert.assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() > 0);
+        illegalStateException = false;
     }
 
     @Override
     public void verifica_saldo() {
-        System.out.println("verifica_saldo: Verifica saldo");
+        System.out.println("verifica_saldo: Verificae se saldo é suficiente");
     }
 
     @Override
     public void e_verifica_saldo() {
-        System.out.println("e_verifica_saldo: Verificando saldo");
+        assertTrue(vendingMachine.getMachineBalance() >= 0.0 && preco_produto <= vendingMachine.getMachineBalance());
+        illegalStateException = false;
+        
+        System.out.println("e_verifica_saldo: Verificando que saldo suficiente");
+    }
+    
+    @Override
+    public void e_verifica_saldo_insuficiente() {
+        assertTrue(preco_produto > vendingMachine.getMachineBalance());
+        illegalStateException = true;
+        
+        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente");
     }
 
     @Override
     public void libera_produto() {
-        /*assertTrue(saldo >= preco_produto);*/
         System.out.println("libera_produto: Produto liberado");
     }
 
@@ -99,11 +167,19 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_insere_codigo() {
-        System.out.println("e_insere_codigo: Inserindo código correto");
+        produto_escolhido = "A3";
+        System.out.println("e_insere_codigo: Inserindo codigo correto: " + produto_escolhido);
+
+        assertTrue(vendingMachine.getInventory().containsKey(produto_escolhido));
+        illegalStateException = false;
     }
     @Override
     public void e_insere_codigo_incorreto() {
-        System.out.println("e_insere_codigo_incorreto: Inserindo código incorreto");
+        produto_escolhido = "Z3";
+        System.out.println("e_insere_codigo_incorreto: Inserindo codigo incorreto: " + produto_escolhido);
+
+        assertTrue(!vendingMachine.getInventory().containsKey(produto_escolhido));
+        illegalStateException = true;
     }
 
     @Override

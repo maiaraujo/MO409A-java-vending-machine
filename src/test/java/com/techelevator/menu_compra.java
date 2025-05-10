@@ -51,7 +51,10 @@ public interface menu_compra {
     void e_produto_disponivel();
 
     @Edge()
-    void e_verifica_saldo();
+    void e_verifica_saldo(); 
+    
+    @Edge()
+    void e_verifica_saldo_insuficiente();
 
     @Vertex()
     void verifica_disponibilidade();
