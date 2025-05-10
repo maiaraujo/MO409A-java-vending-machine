@@ -151,7 +151,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         assertTrue(preco_produto <= vendingMachine.getMachineBalance());
         illegalStateException = false;
         
-        System.out.println("e_verifica_saldo: Verificando que saldo suficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preço de produto "+vendingMachine.displayAsCurrency(preco_produto));
+        System.out.println("e_verifica_saldo: Verificando que saldo suficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preco de produto "+vendingMachine.displayAsCurrency(preco_produto));
     }
     
     @Override
@@ -159,7 +159,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         assertTrue(preco_produto > vendingMachine.getMachineBalance());
         illegalStateException = true;
         
-        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preço de produto "+vendingMachine.displayAsCurrency(preco_produto));
+        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preco de produto "+vendingMachine.displayAsCurrency(preco_produto));
     }
 
     @Override
@@ -169,7 +169,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         assertTrue(vendingMachine.getInventory().containsKey(produto_escolhido));
         preco_produto = vendingMachine.getInventory().get(produto_escolhido).getPrice();
 
-        System.out.println("e_insere_codigo: Inserindo codigo correto: " + produto_escolhido+" e o preço do produto é "+vendingMachine.displayAsCurrency(preco_produto));
+        System.out.println("e_insere_codigo: Inserindo codigo correto: " + produto_escolhido+" e o preço do produto e "+vendingMachine.displayAsCurrency(preco_produto));
 
         illegalStateException = false;
     }
