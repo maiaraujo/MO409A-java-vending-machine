@@ -1,96 +1,93 @@
 package com.techelevator;
 
-import org.graphwalker.core.machine.ExecutionContext;
-import org.graphwalker.java.annotation.AfterExecution;
-import org.graphwalker.java.annotation.BeforeExecution;
-import org.graphwalker.java.annotation.GraphWalker;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
-import org.junit.Assert;
+import org.graphwalker.core.machine.ExecutionContext;
+import org.graphwalker.java.annotation.GraphWalker;
 import org.junit.Before;
-import static org.junit.Assert.*;
+
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @GraphWalker(value = "random(vertex_coverage(100))", start = "menu_principal")
 public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext implements vending_machine{
-    private TesteMaquinaVendas maquinaVendas;
-    private boolean nullPointerException;
-    private boolean illegalStateException;
-    private int opcao;
+    public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_semFim.json");
+
+    /*private VendingMachine testVM;*/
 
     @Before
     public void setUp() {
-        maquinaVendas = new TesteMaquinaVendas();
-        nullPointerException = false;
-        illegalStateException = false;
-        opcao = 2;
+        /*testVM = new TesteMaquinaVendas();*/
     }
 
     @Override
     public void menu_principal(){
-        System.out.println("Menu principal exibido");
+        System.out.println("menu_principal: Menu principal");
     }
     
     @Override
     public void e_finalizar_programa(){
-        System.out.println("Finalizou o programa");
+        System.out.println("e_finalizar_programa: Finalizando o programa");
     }
 
     @Override
     public void encerrar(){
-        System.out.println("Encerra");
+        System.out.println("encerrar: Encerrar");
     }
 
     @Override
     public void e_escolhe_opcao2(){
-        /*assertEquals(2, opcao);*/
-        System.out.println("Escolheu a opcao 2");
+        System.out.println("e_escolhe_opcao2: Escolhendo a opcao 2");
     }
 
     @Override
     public void menu_compra_inicio() {
-        System.out.println("Entra no menu de compra");
+        System.out.println("menu_compra_inicio: Entra no menu de compra");
     }
 
     @Override
     public void e_escolhe_opcao3(){
         /*assertEquals(3, opcao);*/
-        System.out.println("Escolheu a opcao 3");
+        System.out.println("e_escolhe_opcao3: Escolhendo a opcao 3");
     }
 
     @Override
     public void fim(){
-        System.out.println("Encerra o programa");
+        System.out.println("fim: Encerra o programa");
     }
 
     @Override
     public void exibir_itens(){
-        System.out.println("Exibe itens");
+        System.out.println("exibir_itens: Exibe itens");
     }
 
     @Override
     public void e_escolhe_opcao1(){
         /*assertEquals(1, opcao);*/
-        System.out.println("Fechou o programa");
+        System.out.println("e_escolhe_opcao1: Fechando o programa");
     }
 
     @Override
     public void e_restart(){
-        System.out.println("Abriu novamente o programa");
+        System.out.println("e_restart: Abrindo o programa novamente");
         setUp();
     }
 
     @Override
     public void sales_report(){
-        System.out.println("Salva Sales Report");
+        System.out.println("sales_report: Salva Sales Report");
     }
 
     @Override
     public void e_salva_sales_report(){
-        System.out.println("Salvou o Sales Report");
+        System.out.println("e_salva_sales_report: Salvando o Sales Report");
     }
 
     @Override
     public void e_volta_menu(){
-        System.out.println("Voltou no menu");
+        System.out.println("e_volta_menu: Voltando ao menu");
     }
 
 }

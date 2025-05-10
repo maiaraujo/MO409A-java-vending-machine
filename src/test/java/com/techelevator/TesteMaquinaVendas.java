@@ -1,16 +1,12 @@
 package com.techelevator;
 
-import org.graphwalker.core.condition.EdgeCoverage;
-import org.graphwalker.core.generator.RandomPath;
 import org.graphwalker.java.annotation.Model;
-import org.junit.Assert;
-import org.junit.Before;
-import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class TesteMaquinaVendas{
-  
+  /* Chama a hierarquia do menu_principal */
   VendingMachineMenuPrincipalImplementacao menu_principal = new VendingMachineMenuPrincipalImplementacao();
+  /* Chama a hierarquia do menu_compra */
   VendingMachineCompraImplementacao menu_compra = new VendingMachineCompraImplementacao();
 
   @Test
@@ -262,7 +258,7 @@ public class TesteMaquinaVendas{
     menu_compra.menu_principal();
     menu_principal.menu_principal();
     menu_principal.e_escolhe_opcao2();
-    /*menu_principal.menu_compra_inicio();*/
+    menu_principal.menu_compra_inicio();
     menu_compra.menu_compra();
     menu_compra.e_escolhe_opcao1();
     menu_compra.espera_moeda();
@@ -306,7 +302,7 @@ public class TesteMaquinaVendas{
     menu_compra.menu_principal();
     menu_principal.menu_principal();
     menu_principal.e_escolhe_opcao2();
-    /*menu_principal.menu_compra_inicio();*/
+    menu_principal.menu_compra_inicio();
     menu_compra.menu_compra();
     menu_compra.e_escolhe_opcao3();
     menu_compra.finaliza_acao();
@@ -314,7 +310,7 @@ public class TesteMaquinaVendas{
     menu_compra.menu_principal();
     menu_principal.menu_principal();
     menu_principal.e_escolhe_opcao2();
-    /*menu_principal.menu_compra_inicio();*/
+    menu_principal.menu_compra_inicio();
     menu_compra.menu_compra();
     menu_compra.e_escolhe_opcao1();
     menu_compra.espera_moeda();
