@@ -1,6 +1,4 @@
 package com.techelevator;
-
-import org.graphwalker.java.annotation.Model;
 import org.junit.Test;
 
 public class TesteMaquinaVendas{
@@ -135,7 +133,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
@@ -145,7 +143,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
@@ -155,7 +153,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
@@ -165,7 +163,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.e_escolhe_opcao3();
     menu_compra.finaliza_acao();
@@ -196,7 +194,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
@@ -206,7 +204,7 @@ public class TesteMaquinaVendas{
     menu_compra.verifica_disponibilidade();
     menu_compra.e_produto_disponivel();
     menu_compra.verifica_saldo();
-    menu_compra.e_verifica_saldo();
+    menu_compra.e_verifica_saldo_insuficiente();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
     menu_compra.menu_compra();
