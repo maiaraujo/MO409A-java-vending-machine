@@ -21,8 +21,6 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
     private VendingMachine vendingMachine;
     private boolean illegalStateException;
     
-    private double saldo;
-    private String codigo_produto;
     private double quantia;
 
     private String produto_escolhido;
@@ -35,7 +33,6 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         } catch (IOException e) {
             System.out.println("Erro ao iniciar a máquina de vendas: " + e.getMessage());
         }
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.");
         illegalStateException = false;
         quantia = 0.0;
     }
