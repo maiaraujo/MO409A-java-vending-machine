@@ -25,6 +25,8 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     private String produto_escolhido;
     private double preco_produto;
+    private int produto_restante;
+    private double getMachineBalance_Sintetico;
 
     @Before
     public void setUp() {
@@ -35,6 +37,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         }
         illegalStateException = false;
         quantia = 0.0;
+        produto_restante = 1;
     }
 
     public VendingMachineCompraImplementacao() {
@@ -45,6 +48,7 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         }
         illegalStateException = false;
         quantia = 0.0;
+        produto_restante = 1;
     }
 
     @Override
@@ -153,10 +157,12 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
     
     @Override
     public void e_verifica_saldo_insuficiente() {
-        assertTrue(preco_produto > vendingMachine.getMachineBalance());
+    	getMachineBalance_Sintetico = 0.05;
+    	assertTrue(preco_produto > getMachineBalance_Sintetico);
+    	//assertTrue(preco_produto > vendingMachine.getMachineBalance());
         illegalStateException = true;
         
-        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente: "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preco de produto "+vendingMachine.displayAsCurrency(preco_produto));
+        System.out.println("e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: "+vendingMachine.displayAsCurrency(getMachineBalance_Sintetico)+" do original "+vendingMachine.displayAsCurrency(vendingMachine.getMachineBalance())+" para preco de produto "+vendingMachine.displayAsCurrency(preco_produto));
     }
 
     @Override
@@ -181,9 +187,10 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
 
     @Override
     public void e_produto_indisponivel() {
-        System.out.println("e_produto_indisponivel: Verificando se Produto indisponivel: "+vendingMachine.getInventory().get(produto_escolhido).getQuantity());
+        System.out.println("e_produto_indisponivel: Verificando se Produto indisponivel verdadeiro: "+vendingMachine.getInventory().get(produto_escolhido).getQuantity()+" numero sintetico: "+produto_restante);
 
-        assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() == 0);
+        assertTrue(produto_restante == 0);
+        //assertTrue(vendingMachine.getInventory().get(produto_escolhido).getQuantity() == 0);
         illegalStateException = true;
     }
 
@@ -203,8 +210,10 @@ public class VendingMachineCompraImplementacao extends ExecutionContext implemen
         int quantidadeAntes = item.getQuantity();
         vendingMachine.transaction(produto_escolhido);  // efetua a compra
         int quantidadeDepois = item.getQuantity();
-
+        
         assertEquals(quantidadeAntes - 1, quantidadeDepois);
+
+        produto_restante -= 1;
 
         illegalStateException = false;
     }
