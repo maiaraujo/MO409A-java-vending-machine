@@ -41,7 +41,7 @@ public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext i
 
     @Override
     public void add_produto() {
-        System.out.println("add_produto: Exibindo menu para adicionar produto");
+        System.out.println("add_produto: Exibindo menu para adicionar quantidade de produto");
         // Aqui pode-se validar o estado da aplicação se houver flags
     }
 
