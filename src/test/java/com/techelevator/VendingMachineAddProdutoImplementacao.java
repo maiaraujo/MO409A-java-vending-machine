@@ -32,7 +32,7 @@ public class VendingMachineAddProdutoImplementacao extends ExecutionContext impl
             System.out.println("Erro ao iniciar a máquina de vendas: " + e.getMessage());
         }
         illegalStateException = false;
-        produto_restante = 1;
+        //produto_restante = 1;
         produto_escolhido = "";
     }
 
@@ -43,7 +43,7 @@ public class VendingMachineAddProdutoImplementacao extends ExecutionContext impl
             System.out.println("Erro ao iniciar a máquina de vendas: " + e.getMessage());
         }
         illegalStateException = false;
-        produto_restante = 1;
+        //produto_restante = 1;
         produto_escolhido = "";
     }
 
@@ -150,7 +150,6 @@ public class VendingMachineAddProdutoImplementacao extends ExecutionContext impl
 
         System.out.println("e_atualiza_qnt: Adicionou " + qtdAdicionar + " unidades. Nova quantidade no sistema: " + quantidadeDepois);
 
-        // Verifica se a atualização foi aplicada corretamente
         assertEquals(quantidadeAntes + qtdAdicionar, quantidadeDepois);
 
         produto_restante = quantidadeDepois;
