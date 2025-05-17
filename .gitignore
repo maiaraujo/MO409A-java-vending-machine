@@ -79,3 +79,6 @@ cypress/videos
 
 
 sales-reports
+
+# Class de testes (JUnit)
+target/
