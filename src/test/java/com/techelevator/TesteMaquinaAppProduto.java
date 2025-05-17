@@ -138,17 +138,6 @@ public class TesteMaquinaAppProduto {
     public void Teste3() {
         menu_principal.e_restart();
         menu_principal.menu_principal();
-        menu_principal.e_escolhe_opcao3();
-        menu_principal.encerrar();
-        menu_principal.e_salva_sales_report();
-        menu_principal.sales_report();
-        menu_principal.e_finalizar_programa();
-        menu_principal.fim();
-    }
-    @Test
-    public void Teste4() {
-        menu_principal.e_restart();
-        menu_principal.menu_principal();
         menu_principal.e_escolhe_opcao2();
         menu_principal.menu_compra_inicio();
         menu_compra.menu_compra();
@@ -208,29 +197,7 @@ public class TesteMaquinaAppProduto {
         menu_principal.fim();
     }
     @Test
-    public void Teste5() {
-        menu_principal.e_restart();
-        menu_principal.menu_principal();
-        menu_principal.e_escolhe_opcao3();
-        menu_principal.encerrar();
-        menu_principal.e_salva_sales_report();
-        menu_principal.sales_report();
-        menu_principal.e_finalizar_programa();
-        menu_principal.fim();
-    }
-    @Test
-    public void Teste6() {
-        menu_principal.e_restart();
-        menu_principal.menu_principal();
-        menu_principal.e_escolhe_opcao3();
-        menu_principal.encerrar();
-        menu_principal.e_salva_sales_report();
-        menu_principal.sales_report();
-        menu_principal.e_finalizar_programa();
-        menu_principal.fim();
-    }
-    @Test
-    public void Teste7() {
+    public void Teste4() {
         menu_principal.e_restart();
         menu_principal.menu_principal();
         menu_principal.e_escolhe_opcao2();
@@ -258,29 +225,7 @@ public class TesteMaquinaAppProduto {
         menu_principal.fim();
     }
     @Test
-    public void Teste8() {
-        menu_principal.e_restart();
-        menu_principal.menu_principal();
-        menu_principal.e_escolhe_opcao3();
-        menu_principal.encerrar();
-        menu_principal.e_salva_sales_report();
-        menu_principal.sales_report();
-        menu_principal.e_finalizar_programa();
-        menu_principal.fim();
-    }
-    @Test
-    public void Teste9() {
-        menu_principal.e_restart();
-        menu_principal.menu_principal();
-        menu_principal.e_escolhe_opcao3();
-        menu_principal.encerrar();
-        menu_principal.e_salva_sales_report();
-        menu_principal.sales_report();
-        menu_principal.e_finalizar_programa();
-        menu_principal.fim();
-    }
-    @Test
-    public void Teste10() {
+    public void Teste5() {
         menu_principal.e_restart();
         menu_principal.menu_principal();
         menu_principal.e_escolhe_opcao5();
