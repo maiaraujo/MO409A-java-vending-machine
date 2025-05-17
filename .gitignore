@@ -81,4 +81,8 @@ cypress/videos
 sales-reports
 
 # Class de testes (JUnit)
-target/
+target/classes
+target/classes/generated-sources/graphwalker
+target/classes/maven-status/maven-compiler-plugin
+target/classes/surefire-reports
+target/classes/test-classes

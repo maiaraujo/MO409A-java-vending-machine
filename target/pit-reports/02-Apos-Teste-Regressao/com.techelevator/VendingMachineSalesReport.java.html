@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>VendingMachineSalesReport.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.techelevator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.File;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.FileNotFoundException;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.io.PrintWriter;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.text.NumberFormat;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.LocalDateTime;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.time.format.DateTimeFormatter;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.LinkedHashMap;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Map;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Scanner;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.regex.Matcher;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.regex.Pattern;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class VendingMachineSalesReport {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private VendingMachine vendingMachine;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private Map&#60;String, Integer&#62; salesReportInventory = new LinkedHashMap&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Creates a Map from the vending machine&#39;s inventory Map to keep track of sales report numbers.</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public VendingMachineSalesReport(VendingMachine currentVendingMachine) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.vendingMachine = currentVendingMachine;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (String itemCode : vendingMachine.getInventory().keySet()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            salesReportInventory.put(vendingMachine.getInventory().get(itemCode).getName(), 0);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Map&#60;String, Integer&#62; generateSalesReport() throws FileNotFoundException {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        LocalDateTime localDateTime = LocalDateTime.now();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        DateTimeFormatter correctDateTimeFormat = DateTimeFormatter.ofPattern(&#34;yyyy-MM-dd_hhmmss&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        String localDateAndTimeNow = correctDateTimeFormat.format(localDateTime);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        File vendingMachineLog = new File(&#34;Log.txt&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        new File(&#34;sales-reports&#34;).mkdir();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        File vendingMachineSalesReport = new File(&#34;sales-reports/&#34; +</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                localDateAndTimeNow + &#34;_SALES_REPORT.txt&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        double totalSales = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        /*</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        Uses the vending machine&#39;s continuous Log.txt file to update</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        the sales report Map with correct sales numbers. Then generates</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        the sales report .txt file from the sales report Map.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        try (Scanner vendingMachineLogReader = new Scanner(vendingMachineLog);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>             PrintWriter salesReportWriter = new PrintWriter(vendingMachineSalesReport)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_52'/>
+52
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_52'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            salesReportWriter.println(&#34;****SALES REPORT****&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_53'/>
+53
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_53'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            salesReportWriter.println(&#34;Generated on: &#34; + localDateAndTimeNow);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_54'/>
+54
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_54'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            salesReportWriter.println();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_56'/>
+56
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_56'>1</a>
+<span>
+
+1. generateSalesReport : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            while (vendingMachineLogReader.hasNextLine()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                String currentLine = vendingMachineLogReader.nextLine();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                Pattern itemCodePattern = Pattern.compile(&#34;[A-Z]\\d&#34;); // Searches each line of Log.txt for item codes.</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                Matcher itemCodePatternMatcher = itemCodePattern.matcher(currentLine);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_60'/>
+60
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_60'>1</a>
+<span>
+
+1. generateSalesReport : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                if (itemCodePatternMatcher.find()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    String itemCode = itemCodePatternMatcher.group();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    String itemName = vendingMachine.getInventory().get(itemCode).getName();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_63'/>
+63
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_63'>1</a>
+<span>
+
+1. generateSalesReport : negated conditional &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                    if (salesReportInventory.containsKey(itemName)) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                        int quantitySold = salesReportInventory.get(itemName);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_65'/>
+65
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_65'>1</a>
+<span>
+
+1. generateSalesReport : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                        salesReportInventory.put(itemName, quantitySold + 1);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_66'/>
+66
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_66'>1</a>
+<span>
+
+1. generateSalesReport : Replaced double addition with subtraction &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                        totalSales += vendingMachine.getInventory().get(itemCode).getPrice();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>                }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            for (String itemName : salesReportInventory.keySet()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_72'/>
+72
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_72'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>                salesReportWriter.println(itemName + &#34;|&#34; + salesReportInventory.get(itemName));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            NumberFormat formatter = NumberFormat.getCurrencyInstance();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            String totalSalesAsString = formatter.format(totalSales);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_78'/>
+78
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_78'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            salesReportWriter.println();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_79'/>
+79
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_79'>1</a>
+<span>
+
+1. generateSalesReport : removed call to java/io/PrintWriter::println &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            salesReportWriter.println(&#34;Total Sales to Date: &#34; + totalSalesAsString);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_81'/>
+81
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_81'>1</a>
+<span>
+
+1. generateSalesReport : replaced return value with Collections.emptyMap for com/techelevator/VendingMachineSalesReport::generateSalesReport &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return salesReportInventory;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@20f4849c_83'/>
+83
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_83'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_52'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_53'>53</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_53'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_54'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_56'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_60'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste82(com.techelevator.TesteMaquinaVendasEdgeCoverage)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_63'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_65'>65</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_65'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_66'>66</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_66'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> Replaced double addition with subtraction &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_72'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_78'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_79'>79</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_79'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> removed call to java/io/PrintWriter::println &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@20f4849c_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@20f4849c_81'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>generateSalesReport<br/><b>Killed by : </b>none</span></span> replaced return value with Collections.emptyMap for com/techelevator/VendingMachineSalesReport::generateSalesReport &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste82(com.techelevator.TesteMaquinaVendasEdgeCoverage) (14 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste41(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste29(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste64(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste83(com.techelevator.TesteMaquinaVendasEdgeCoverage) (14 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste68(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste74(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste62(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste52(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste76(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste73(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste77(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste28(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste84(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste58(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste98(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste19(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste39(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste37(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste32(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste119(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste40(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste12(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste113(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste27(com.techelevator.TesteMaquinaVendasEdgeCoverage) (19 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste42(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste47(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste23(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste72(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste117(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste63(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste50(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste43(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste49(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste15(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste54(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste44(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste25(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste45(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste36(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste92(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste94(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste118(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendas.Teste5(com.techelevator.TesteMaquinaVendas) (22 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste51(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste18(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste30(com.techelevator.TesteMaquinaVendasEdgeCoverage) (19 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste38(com.techelevator.TesteMaquinaVendasEdgeCoverage) (22 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste115(com.techelevator.TesteMaquinaVendasEdgeCoverage) (22 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste106(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste96(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste95(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste105(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste55(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste93(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste26(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste66(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste89(com.techelevator.TesteMaquinaVendasEdgeCoverage) (24 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste53(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste121(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste70(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste97(com.techelevator.TesteMaquinaVendasEdgeCoverage) (19 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste91(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste21(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste110(com.techelevator.TesteMaquinaVendasEdgeCoverage) (25 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste33(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste109(com.techelevator.TesteMaquinaVendasEdgeCoverage) (27 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste111(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste48(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste90(com.techelevator.TesteMaquinaVendasEdgeCoverage) (27 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste69(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste24(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste122(com.techelevator.TesteMaquinaVendasEdgeCoverage) (28 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste78(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste8(com.techelevator.TesteMaquinaVendasEdgeCoverage) (19 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste112(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste14(com.techelevator.TesteMaquinaVendasEdgeCoverage) (29 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste35(com.techelevator.TesteMaquinaVendasEdgeCoverage) (25 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste126(com.techelevator.TesteMaquinaVendasEdgeCoverage) (25 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste57(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste20(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste60(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste17(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste108(com.techelevator.TesteMaquinaVendasEdgeCoverage) (29 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste80(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste116(com.techelevator.TesteMaquinaVendasEdgeCoverage) (26 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste22(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste65(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste59(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste103(com.techelevator.TesteMaquinaVendasEdgeCoverage) (28 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste125(com.techelevator.TesteMaquinaVendasEdgeCoverage) (22 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste56(com.techelevator.TesteMaquinaVendasEdgeCoverage) (21 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste61(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste104(com.techelevator.TesteMaquinaVendasEdgeCoverage) (29 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste87(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste16(com.techelevator.TesteMaquinaVendasEdgeCoverage) (15 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste102(com.techelevator.TesteMaquinaVendasEdgeCoverage) (28 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste46(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste101(com.techelevator.TesteMaquinaVendasEdgeCoverage) (29 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste10(com.techelevator.TesteMaquinaVendasEdgeCoverage) (30 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste7(com.techelevator.TesteMaquinaVendasEdgeCoverage) (19 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste31(com.techelevator.TesteMaquinaVendasEdgeCoverage) (16 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste81(com.techelevator.TesteMaquinaVendasEdgeCoverage) (17 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste9(com.techelevator.TesteMaquinaVendasEdgeCoverage) (26 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste123(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste124(com.techelevator.TesteMaquinaVendasEdgeCoverage) (30 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste11(com.techelevator.TesteMaquinaVendasEdgeCoverage) (24 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste120(com.techelevator.TesteMaquinaVendasEdgeCoverage) (23 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste99(com.techelevator.TesteMaquinaVendasEdgeCoverage) (24 ms)</li><li>com.techelevator.TesteMaquinaVendas.Teste4(com.techelevator.TesteMaquinaVendas) (27 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste79(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste88(com.techelevator.TesteMaquinaVendasEdgeCoverage) (39 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste86(com.techelevator.TesteMaquinaVendasEdgeCoverage) (31 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste100(com.techelevator.TesteMaquinaVendasEdgeCoverage) (27 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste114(com.techelevator.TesteMaquinaVendasEdgeCoverage) (22 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste71(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste67(com.techelevator.TesteMaquinaVendasEdgeCoverage) (18 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste34(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendas.Teste2(com.techelevator.TesteMaquinaVendas) (41 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste13(com.techelevator.TesteMaquinaVendasEdgeCoverage) (35 ms)</li><li>com.techelevator.TesteMaquinaVendas.Teste3(com.techelevator.TesteMaquinaVendas) (31 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste75(com.techelevator.TesteMaquinaVendasEdgeCoverage) (20 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste107(com.techelevator.TesteMaquinaVendasEdgeCoverage) (28 ms)</li><li>com.techelevator.TesteMaquinaAppProduto.Teste4(com.techelevator.TesteMaquinaAppProduto) (43 ms)</li><li>com.techelevator.TesteMaquinaVendasEdgeCoverage.Teste85(com.techelevator.TesteMaquinaVendasEdgeCoverage) (30 ms)</li><li>com.techelevator.TesteMaquinaAppProduto.Teste2(com.techelevator.TesteMaquinaAppProduto) (59 ms)</li><li>com.techelevator.TesteMaquinaVendas.Teste1(com.techelevator.TesteMaquinaVendas) (51 ms)</li><li>com.techelevator.TesteMaquinaAppProduto.Teste3(com.techelevator.TesteMaquinaAppProduto) (58 ms)</li><li>com.techelevator.TesteMaquinaAppProduto.Teste1(com.techelevator.TesteMaquinaAppProduto) (1014 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.3
+
+</body>
+</html>
