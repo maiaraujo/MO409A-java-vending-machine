@@ -13,10 +13,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@GraphWalker(value = "random(vertex_coverage(100))", start = "menu_compra")
+@GraphWalker(value = "random(edge_coverage(100))", start = "menu_compra")
 public class VendingMachineCompraImplementacao extends ExecutionContext implements menu_compra {
     
-    public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_semFim.json");
+    public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_AddProduto.json");
 
     private VendingMachine vendingMachine;
     private boolean illegalStateException;

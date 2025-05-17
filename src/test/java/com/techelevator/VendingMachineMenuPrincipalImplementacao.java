@@ -11,10 +11,10 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-@GraphWalker(value = "random(vertex_coverage(100))", start = "menu_principal")
+@GraphWalker(value = "random(edge_coverage(100))", start = "menu_principal")
 public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext implements vending_machine {
 
-    public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_semFim.json");
+    public final static Path MODEL_PATH = Paths.get("src/main/resources/Vending-Machine_HFSM_AddProduto.json");
 
     private VendingMachine vendingMachine;
     private VendingMachineSalesReport salesReport;
@@ -30,13 +30,19 @@ public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext i
     @Override
     public void menu_principal() {
         System.out.println("menu_principal: Exibindo menu principal");
-        // Aqui você pode validar o estado da aplicação se houver flags
+        // Aqui pode-se validar o estado da aplicação se houver flags
     }
 
     @Override
     public void menu_compra_inicio() {
         System.out.println("menu_compra_inicio: Entrando no menu de compra");
         // Simula o fluxo de entrada no menu de compra (por exemplo: alteração de estado interno se houver)
+    }
+
+    @Override
+    public void add_produto() {
+        System.out.println("add_produto: Exibindo menu para adicionar produto");
+        // Aqui pode-se validar o estado da aplicação se houver flags
     }
 
     @Override
@@ -60,6 +66,12 @@ public class VendingMachineMenuPrincipalImplementacao extends ExecutionContext i
         } catch (FileNotFoundException e) {
             System.out.println("Erro ao gerar relatório de vendas");
         }
+    }
+
+    @Override
+    public void e_escolhe_opcao5() {
+        System.out.println("e_escolhe_opcao5: Adicionar Produto");
+        // nenhuma ação no backend diretamente, apenas transição visual
     }
 
     @Override

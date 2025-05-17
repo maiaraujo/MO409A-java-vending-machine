@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techelevator.TesteMaquinaVendas" time="0.198" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.techelevator.TesteMaquinaAppProduto" time="1.815" tests="10" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -63,8 +63,215 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="Teste1" classname="com.techelevator.TesteMaquinaVendas" time="0.007">
+  <testcase name="Teste1" classname="com.techelevator.TesteMaquinaAppProduto" time="0.223">
     <system-out><![CDATA[menu_principal: Exibindo menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao1: Exibir inventÃ¡rio
+A1   Potato Crisps       5 remaining   R$ 3,05
+A2   Stackers            5 remaining   R$ 1,45
+A3   Grain Waves         5 remaining   R$ 2,75
+A4   Cloud Popcorn       5 remaining   R$ 3,65
+B1   Moonpie             5 remaining   R$ 1,80
+B2   Cowtales            5 remaining   R$ 1,50
+B3   Wonka Bar           5 remaining   R$ 1,50
+B4   Crunchie            5 remaining   R$ 1,75
+C1   Cola                5 remaining   R$ 1,25
+C2   Dr. Salt            5 remaining   R$ 1,50
+C3   Mountain Melter     5 remaining   R$ 1,50
+C4   Heavy               5 remaining   R$ 1,50
+D1   U-Chews             5 remaining   R$ 0,85
+D2   Little League Chew  5 remaining   R$ 0,95
+D3   Chiclets            5 remaining   R$ 0,75
+D4   Triplemint          5 remaining   R$ 0,75
+exibir_itens: Listando novamente os itens
+A1   Potato Crisps       5 remaining   R$ 3,05
+A2   Stackers            5 remaining   R$ 1,45
+A3   Grain Waves         5 remaining   R$ 2,75
+A4   Cloud Popcorn       5 remaining   R$ 3,65
+B1   Moonpie             5 remaining   R$ 1,80
+B2   Cowtales            5 remaining   R$ 1,50
+B3   Wonka Bar           5 remaining   R$ 1,50
+B4   Crunchie            5 remaining   R$ 1,75
+C1   Cola                5 remaining   R$ 1,25
+C2   Dr. Salt            5 remaining   R$ 1,50
+C3   Mountain Melter     5 remaining   R$ 1,50
+C4   Heavy               5 remaining   R$ 1,50
+D1   U-Chews             5 remaining   R$ 0,85
+D2   Little League Chew  5 remaining   R$ 0,95
+D3   Chiclets            5 remaining   R$ 0,75
+D4   Triplemint          5 remaining   R$ 0,75
+e_volta_menu: Retornando ao menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao2: Ir para menu de compra
+menu_compra_inicio: Entrando no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao3: Escolhendo a opcao 3
+finaliza_acao: Finalizou acao
+e_devolve_troco: Devolvendo troco
+e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="Teste2" classname="com.techelevator.TesteMaquinaAppProduto" time="0.047">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste3" classname="com.techelevator.TesteMaquinaAppProduto" time="0.023">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste4" classname="com.techelevator.TesteMaquinaAppProduto" time="0.035">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao2: Ir para menu de compra
+menu_compra_inicio: Entrando no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao1: Escolhendo a opcao 1
+espera_moeda: Espera moeda
+e_insere_quantia_invalida: Inserindo quantia invalida de R$ 50,00
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao3: Escolhendo a opcao 3
+finaliza_acao: Finalizou acao
+e_devolve_troco: Devolvendo troco
+e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao2: Ir para menu de compra
+menu_compra_inicio: Entrando no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_disponivel: Verificando se Produto disponivel: 5
+verifica_saldo: Verifica se saldo e suficiente
+e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_disponivel: Verificando se Produto disponivel: 5
+verifica_saldo: Verifica se saldo e suficiente
+e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao3: Escolhendo a opcao 3
+finaliza_acao: Finalizou acao
+e_devolve_troco: Devolvendo troco
+e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste5" classname="com.techelevator.TesteMaquinaAppProduto" time="0.027">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste6" classname="com.techelevator.TesteMaquinaAppProduto" time="0.026">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste7" classname="com.techelevator.TesteMaquinaAppProduto" time="0.019">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
 e_escolhe_opcao2: Ir para menu de compra
 menu_compra_inicio: Entrando no menu de compra
 menu_compra: Entrou no menu de compra
@@ -74,27 +281,63 @@ e_devolve_troco: Devolvendo troco
 e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 80 quarters, 0 dimes, 0 nickels
-menu_principal: Entrou no menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
+menu_principal: Exibindo menu principal
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste8" classname="com.techelevator.TesteMaquinaAppProduto" time="0.021">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste9" classname="com.techelevator.TesteMaquinaAppProduto" time="0.03">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao3: Salvar relatÃ³rio de vendas
+encerrar: PÃ³s-finalizaÃ§Ã£o
+e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
+e_finalizar_programa: Encerrando aplicaÃ§Ã£o
+fim: AplicaÃ§Ã£o encerrada
+]]></system-out>
+  </testcase>
+  <testcase name="Teste10" classname="com.techelevator.TesteMaquinaAppProduto" time="0.041">
+    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Exibindo menu principal
+e_escolhe_opcao5: Adicionar Produto
+add_produto: Exibindo menu para adicionar produto
 menu_principal: Exibindo menu principal
 e_escolhe_opcao2: Ir para menu de compra
 menu_compra_inicio: Entrando no menu de compra
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_disponivel: Verificando se Produto disponivel: 5
+verifica_saldo: Verifica se saldo e suficiente
+e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_disponivel: Verificando se Produto disponivel: 5
+verifica_saldo: Verifica se saldo e suficiente
+e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
+menu_compra: Entrou no menu de compra
+menu_compra: Entrou no menu de compra
 menu_compra: Entrou no menu de compra
 e_escolhe_opcao3: Escolhendo a opcao 3
 finaliza_acao: Finalizou acao
@@ -102,24 +345,46 @@ e_devolve_troco: Devolvendo troco
 e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
+menu_principal: Entrou no menu principal
+menu_principal: Exibindo menu principal
 e_escolhe_opcao2: Ir para menu de compra
 menu_compra_inicio: Entrando no menu de compra
 menu_compra: Entrou no menu de compra
 e_escolhe_opcao2: Escolhendo a opcao 2
 espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_disponivel: Verificando se Produto disponivel: 5
+verifica_saldo: Verifica se saldo e suficiente
+e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
 menu_compra: Entrou no menu de compra
 e_escolhe_opcao1: Escolhendo a opcao 1
 espera_moeda: Espera moeda
 e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
 menu_compra: Entrou no menu de compra
 menu_compra: Entrou no menu de compra
 menu_compra: Entrou no menu de compra
@@ -129,348 +394,14 @@ e_devolve_troco: Devolvendo troco
 e_devolve_troco: Devolvendo troco: 40 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao3: Salvar relatÃ³rio de vendas
-encerrar: PÃ³s-finalizaÃ§Ã£o
-e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
-e_finalizar_programa: Encerrando aplicaÃ§Ã£o
-fim: AplicaÃ§Ã£o encerrada
-]]></system-out>
-  </testcase>
-  <testcase name="Teste2" classname="com.techelevator.TesteMaquinaVendas" time="0.056">
-    <system-out><![CDATA[e_restart: Reiniciando sistema
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao1: Exibir inventÃ¡rio
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-exibir_itens: Listando novamente os itens
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-e_volta_menu: Retornando ao menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao1: Exibir inventÃ¡rio
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-exibir_itens: Listando novamente os itens
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-e_volta_menu: Retornando ao menu principal
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao3: Salvar relatÃ³rio de vendas
-encerrar: PÃ³s-finalizaÃ§Ã£o
-e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
-e_finalizar_programa: Encerrando aplicaÃ§Ã£o
-fim: AplicaÃ§Ã£o encerrada
-]]></system-out>
-  </testcase>
-  <testcase name="Teste3" classname="com.techelevator.TesteMaquinaVendas" time="0.063">
-    <system-out><![CDATA[e_restart: Reiniciando sistema
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao1: Exibir inventÃ¡rio
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-exibir_itens: Listando novamente os itens
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-e_volta_menu: Retornando ao menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia_invalida: Inserindo quantia invalida de R$ 50,00
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao1: Exibir inventÃ¡rio
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-exibir_itens: Listando novamente os itens
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-e_volta_menu: Retornando ao menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao3: Salvar relatÃ³rio de vendas
-encerrar: PÃ³s-finalizaÃ§Ã£o
-e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
-e_finalizar_programa: Encerrando aplicaÃ§Ã£o
-fim: AplicaÃ§Ã£o encerrada
-]]></system-out>
-  </testcase>
-  <testcase name="Teste4" classname="com.techelevator.TesteMaquinaVendas" time="0.007">
-    <system-out><![CDATA[e_restart: Reiniciando sistema
-menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
-verifica_disponibilidade: Verifica disponibilidade
-e_produto_disponivel: Verificando se Produto disponivel: 5
-verifica_saldo: Verifica se saldo e suficiente
-e_verifica_saldo_insuficiente: Verificando que saldo insuficiente sintetico: R$ 0,05 do original R$ 0,00 para preco de produto R$ 2,75
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao3: Salvar relatÃ³rio de vendas
-encerrar: PÃ³s-finalizaÃ§Ã£o
-e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
-e_finalizar_programa: Encerrando aplicaÃ§Ã£o
-fim: AplicaÃ§Ã£o encerrada
-]]></system-out>
-  </testcase>
-  <testcase name="Teste5" classname="com.techelevator.TesteMaquinaVendas" time="0.007">
-    <system-out><![CDATA[e_restart: Reiniciando sistema
+menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
-e_escolhe_opcao3: Salvar relatÃ³rio de vendas
-encerrar: PÃ³s-finalizaÃ§Ã£o
-e_salva_sales_report: Confirmando geraÃ§Ã£o do relatÃ³rio
-e_finalizar_programa: Encerrando aplicaÃ§Ã£o
-fim: AplicaÃ§Ã£o encerrada
-]]></system-out>
-  </testcase>
-  <testcase name="Teste6" classname="com.techelevator.TesteMaquinaVendas" time="0.045">
-    <system-out><![CDATA[e_restart: Reiniciando sistema
-menu_principal: Exibindo menu principal
-e_escolhe_opcao1: Exibir inventÃ¡rio
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-exibir_itens: Listando novamente os itens
-A1   Potato Crisps       5 remaining   R$ 3,05
-A2   Stackers            5 remaining   R$ 1,45
-A3   Grain Waves         5 remaining   R$ 2,75
-A4   Cloud Popcorn       5 remaining   R$ 3,65
-B1   Moonpie             5 remaining   R$ 1,80
-B2   Cowtales            5 remaining   R$ 1,50
-B3   Wonka Bar           5 remaining   R$ 1,50
-B4   Crunchie            5 remaining   R$ 1,75
-C1   Cola                5 remaining   R$ 1,25
-C2   Dr. Salt            5 remaining   R$ 1,50
-C3   Mountain Melter     5 remaining   R$ 1,50
-C4   Heavy               5 remaining   R$ 1,50
-D1   U-Chews             5 remaining   R$ 0,85
-D2   Little League Chew  5 remaining   R$ 0,95
-D3   Chiclets            5 remaining   R$ 0,75
-D4   Triplemint          5 remaining   R$ 0,75
-e_volta_menu: Retornando ao menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia_invalida: Inserindo quantia invalida de R$ 50,00
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
 menu_principal: Entrou no menu principal
 menu_principal: Exibindo menu principal
 e_escolhe_opcao2: Ir para menu de compra
@@ -481,68 +412,6 @@ espera_moeda: Espera moeda
 e_insere_quantia: Inserindo quantia valida de R$ 10,00
 menu_compra: Entrou no menu de compra
 menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao2: Escolhendo a opcao 2
-espera_produto: Esperando produto
-e_insere_codigo_incorreto: Inserindo codigo incorreto: Z3
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 120 quarters, 0 dimes, 0 nickels
-menu_principal: Entrou no menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao3: Escolhendo a opcao 3
-finaliza_acao: Finalizou acao
-e_devolve_troco: Devolvendo troco
-e_devolve_troco: Devolvendo troco: 0 quarters, 0 dimes, 0 nickels
-menu_principal: Entrou no menu principal
-menu_principal: Exibindo menu principal
-e_escolhe_opcao2: Ir para menu de compra
-menu_compra_inicio: Entrando no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia: Inserindo quantia valida de R$ 10,00
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia_invalida: Inserindo quantia invalida de R$ 50,00
-menu_compra: Entrou no menu de compra
-e_escolhe_opcao1: Escolhendo a opcao 1
-espera_moeda: Espera moeda
-e_insere_quantia_invalida: Inserindo quantia invalida de R$ 50,00
 menu_compra: Entrou no menu de compra
 e_escolhe_opcao2: Escolhendo a opcao 2
 espera_produto: Esperando produto
@@ -552,6 +421,14 @@ e_produto_disponivel: Verificando se Produto disponivel: 5
 verifica_saldo: Verifica se saldo e suficiente
 e_verifica_saldo: Verificando que saldo suficiente: R$ 10,00 para preco de produto R$ 2,75
 libera_produto: Produto liberado
+e_produtto_liberado: Liberando produto
+menu_compra: Entrou no menu de compra
+e_escolhe_opcao2: Escolhendo a opcao 2
+espera_produto: Esperando produto
+e_insere_codigo: Inserindo codigo correto: A3 e o preÃ§o do produto e R$ 2,75
+verifica_disponibilidade: Verifica disponibilidade
+e_produto_indisponivel: Verificando se Produto indisponivel verdadeiro: 4 numero sintetico: 0
+menu_compra: Entrou no menu de compra
 ]]></system-out>
   </testcase>
 </testsuite>

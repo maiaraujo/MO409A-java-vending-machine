@@ -5,50 +5,47 @@ import org.graphwalker.java.annotation.Vertex;
 import org.graphwalker.java.annotation.Edge;
 
 @Model(file = "Vending-Machine_HFSM_AddProduto.json")
-public interface vending_machine {
+public interface menu_add_produto {
 
     @Edge()
-    void e_finalizar_programa();
+    void e_qtd_incorreta();
 
-    @Vertex()
-    void encerrar();
+    @Edge()
+    void e_entra_menuPrincipal();
 
     @Edge()
     void e_escolhe_opcao2();
 
     @Vertex()
-    void menu_compra_inicio();
+    void add_produto();
 
     @Edge()
-    void e_escolhe_opcao3();
-
-    @Vertex()
-    void fim();
-
-    @Vertex()
-    void exibir_itens();
+    void e_insere_codigo_incorreto();
 
     @Edge()
     void e_escolhe_opcao1();
 
-    @Edge()
-    void e_restart();
+    @Vertex()
+    void add_finaliza_acao();
 
     @Vertex()
-    void sales_report();
+    void atualiza_quantidade();
 
     @Vertex()
     void menu_principal();
 
     @Edge()
-    void e_salva_sales_report();
-
-    @Edge()
-    void e_volta_menu();
+    void e_insere_codigo();
 
     @Vertex()
-    void add_produto();
+    void espera_quantidade();
 
     @Edge()
-    void e_escolhe_opcao5();
+    void e_atualiza_qnt();
+
+    @Vertex()
+    void add_espera_produto();
+
+    @Edge()
+    void e_qtd_correta();
 }
