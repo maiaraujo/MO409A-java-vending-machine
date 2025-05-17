@@ -23,6 +23,7 @@ public class UI {
             System.out.println();
             System.out.println("(1) Display vending machine items");
             System.out.println("(2) Purchase");
+            System.out.println("(5) Increase Amount of Product");
             System.out.println("(3) Exit");
             System.out.println();
             System.out.print("Type a number, then hit Enter: ");
@@ -34,11 +35,11 @@ public class UI {
                 System.out.println("INVALID INPUT. Please enter a number: 1, 2, or 3.");
                 System.out.println();
             }
-            if (inputNumMainMenu > 0 && inputNumMainMenu < 5) {
+            if (inputNumMainMenu > 0 && inputNumMainMenu <= 5) {
                 break;
             }
             System.out.println();
-            System.out.println("INVALID INPUT. Please enter a number: 1, 2, or 3.");
+            System.out.println("INVALID INPUT. Please enter a number: 1, 2, 3 or 5.");
             System.out.println();
         }
 
@@ -184,4 +185,84 @@ public class UI {
             }
         }
     }
+
+    public void increaseAmountofProduct() {
+
+        int inputNumAmountofProduct = 0;
+
+        while (inputNumAmountofProduct != 2) {
+            System.out.println();
+            System.out.println("===INCREASE AMOUNT OF PRODUCT===");
+            System.out.println();
+            System.out.println("Please select one of these options:");
+            System.out.println("(1) Select product");
+            System.out.println("(2) Finish action");
+            System.out.println();
+            System.out.print("Type a number, then hit Enter: ");
+            String userInput = input.nextLine();
+
+            try {
+                inputNumAmountofProduct = Integer.parseInt(userInput);
+
+                if (inputNumAmountofProduct < 1 || inputNumAmountofProduct > 2) {
+                    System.out.println("INVALID INPUT. Please enter 1 or 2.");
+                    continue;
+                }
+
+                if (inputNumAmountofProduct == 1) {
+                    uiVendingMachine.listInventory();
+                    
+                    while (true) {
+                        System.out.println();
+                        System.out.print("Enter the code for the item you'd like to increase: ");
+                        String productCode = input.nextLine();
+
+                        if (!uiVendingMachine.getInventory().containsKey(productCode)) {
+                            System.out.println("INVALID INPUT. Please enter a valid item code.");
+                            System.out.println();
+                            continue;
+                        }
+
+                        Item item = uiVendingMachine.getInventory().get(productCode);
+                        int currentQty = item.getQuantity();
+                        System.out.println("Current quantity of " + item.getName() + ": " + currentQty);
+                        System.out.println();
+
+                        if (currentQty == 10) {
+                            System.out.println("Stock is already full. Cannot add more than 10 units.");
+                            System.out.println();
+                            continue;
+                        }
+                        
+                        System.out.println();
+                        System.out.print("How many units do you want to add? (Max allowed in this transaction: " + (10 - currentQty) + "): ");
+                        System.out.println();
+                        String amountInput = input.nextLine();
+
+                        try {
+                            int amountToAdd = Integer.parseInt(amountInput);
+
+                            if (amountToAdd < 1 || amountToAdd > (10 - currentQty)) {
+                                System.out.println("INVALID AMOUNT. You can add up to " + (10 - currentQty) + " units.");
+                                System.out.println();
+                            } else {
+                                item.setQuantity(currentQty + amountToAdd);
+                                System.out.println();
+                                System.out.println("QUANTITY UPDATED! New amount of " + item.getName() + ": " + item.getQuantity());
+                                System.out.println();
+                                break;
+                            }
+                        } catch (NumberFormatException e) {
+                            System.out.println("INVALID INPUT. Please enter a valid number.");
+                            System.out.println();
+                        }
+                    }
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("INVALID INPUT. Please enter a number: 1 or 2.");
+                System.out.println();
+            }
+        }
+    } 
 }
