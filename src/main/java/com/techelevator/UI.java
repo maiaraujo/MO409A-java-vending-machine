@@ -234,28 +234,30 @@ public class UI {
                             continue;
                         }
                         
-                        System.out.println();
-                        System.out.print("How many units do you want to add? (Max allowed in this transaction: " + (10 - currentQty) + "): ");
-                        System.out.println();
-                        String amountInput = input.nextLine();
-
-                        try {
-                            int amountToAdd = Integer.parseInt(amountInput);
-
-                            if (amountToAdd < 1 || amountToAdd > (10 - currentQty)) {
-                                System.out.println("INVALID AMOUNT. You can add up to " + (10 - currentQty) + " units.");
-                                System.out.println();
-                            } else {
-                                item.setQuantity(currentQty + amountToAdd);
-                                System.out.println();
-                                System.out.println("QUANTITY UPDATED! New amount of " + item.getName() + ": " + item.getQuantity());
-                                System.out.println();
-                                break;
-                            }
-                        } catch (NumberFormatException e) {
-                            System.out.println("INVALID INPUT. Please enter a valid number.");
+                        while(true){
                             System.out.println();
+                            System.out.print("How many units do you want to add? (Max allowed in this transaction: " + (10 - currentQty) + "): ");
+                            System.out.println();
+                            String amountInput = input.nextLine();
+
+                            try {
+                                int amountToAdd = Integer.parseInt(amountInput);
+
+                                if (amountToAdd < 1 || amountToAdd > (10 - currentQty)) {
+                                    System.out.println("INVALID AMOUNT. You can add up to " + (10 - currentQty) + " units.");
+                                    System.out.println();
+                                } else {
+                                    item.setQuantity(currentQty + amountToAdd);
+                                    System.out.println("QUANTITY UPDATED! New amount of " + item.getName() + ": " + item.getQuantity());
+                                    System.out.println();
+                                    break;
+                                }
+                            } catch (NumberFormatException e) {
+                                System.out.println("INVALID INPUT. Please enter a valid number.");
+                                System.out.println();
+                            }
                         }
+                        break;
                     }
                 }
 
