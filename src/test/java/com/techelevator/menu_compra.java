@@ -5,7 +5,7 @@ import org.graphwalker.java.annotation.Model;
 import org.graphwalker.java.annotation.Vertex;
 import org.graphwalker.java.annotation.Edge;
 
-@Model(file = "Vending-Machine_HFSM_semFim.json")
+@Model(file = "Vending-Machine_HFSM_AddProduto.json")
 public interface menu_compra {
 
     @Vertex()
